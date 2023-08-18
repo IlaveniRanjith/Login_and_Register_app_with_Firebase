@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/purple_700"
+            android:textAlignment="center"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:titleTextColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/border"
+            android:padding="15dp">
+
+
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="200dp"
+                android:src="@drawable/img" />
+            <!-- android:layout_below="@+id/main_toolbar" -->
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_logo"
+                android:layout_marginTop="30dp"
+                android:text="Ilaveni Ranjith"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <TextView
+                android:id="@+id/tv_main_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_app_name"
+                android:layout_marginTop="10dp"
+                android:text="Welcome\nto\nAndroid Firebase App"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_main_head"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/border"
+                android:text="Login" />
+
+            <!--<Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_register"
+                android:text="Register"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/btn_login"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/border"/>-->
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_login"
+                android:layout_marginTop="30dp"
+                android:text="Do not have an account?"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_register_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_register"
+                android:text="@string/register"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</ScrollView>

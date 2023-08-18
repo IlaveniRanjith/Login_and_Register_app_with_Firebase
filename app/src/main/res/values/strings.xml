@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Login App</string>
+    <string name="welcome_head_profile">Welcome, %1$s!</string>
+    <string name="profile_authenticated">Your Profile has been authenticated (Verified).</string>
+    <string name="change_pwd_now"> You can change your password now.</string>
+    <string name="register"><u>Register</u></string>
+    <string name="click_here_to_reset"><u>Click Here to Reset</u></string>
+    <string name="user_display_picture">User Display Picture</string>
+    <string name="loading">Loading.....</string>
+    <string name="name">Full Name</string>
+    <string name="email">email</string>
+    <string name="dob">date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="registered_user_since">You are a Registered User Since:</string>
+    <string name="upload_profile_picture"><u>Upload profile Picture</u></string>
+    <string name="update_email_u"><u>Update Email</u></string>
+</resources>
